@@ -1,0 +1,150 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+:root {
+  --primary-color: #d4bff9;
+  --dark-background: #424242;
+}
+
+#app {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.side-bars {
+  height: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  background-color: #424242;
+}
+
+.room {
+  background-color: var(--primary-color);
+  width: 96px;
+  height: 96px;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-container {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  width: 500px;
+  background-color: white;
+  padding: 16px;
+}
+
+.modal input {
+  margin-bottom: 16px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-container button:nth-of-type(1) {
+  background-color: white;
+  color: var(--dark-background);
+  margin-right: 8px;
+}
+
+.button-container button:nth-of-type(1):hover {
+  background-color: lightgray;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-background);
+  color: white;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 16px 0px;
+}
+
+.send-button {
+  display: flex;
+  text-align: right;
+  color: white;
+}
+
+.message-input {
+  width: 95%;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 16px;
+  background-color: var(--primary-color);
+  border-color: var(--dark-background);
+}
+
+.bottom-stuff {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.userName {
+  color: var(--primary-color);
+}
+
+.chat-container {
+  background-color: #d4bff9;
+}
+
+.loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 24px;
+  background-color: #424242;
+  color: white;
+}
+
+.instructions {
+  margin: 16px;
+  font-size: 24px;
+  color:var(--primary-color)
+}
